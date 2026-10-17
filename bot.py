@@ -1,4 +1,3 @@
-
 import vk_api
 from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
 from vk_api.keyboard import VkKeyboard, VkKeyboardColor
@@ -150,7 +149,7 @@ banner_text = (
     ' ✨Оформление сообщества;\n'
     ' ✨Создание сайта.\n\n'
     'По всем вопросам обращайтесь к админу\n👇\n'
-    'https://vk.com/dianamaysky'
+    'https://vk.com/yura_derdyuk'
 )
 
 def filer(user_id: str, path: str) -> bool:
@@ -342,11 +341,14 @@ class like(BaseBot):
         # Создание клавиатуры
         self.keyboard = VkKeyboard(one_time=False)
         self.keyboard.add_button("❤️ПРАВИЛА ЧАТА❤️", VkKeyboardColor.PRIMARY)
+        self.keyboard.add_line(
+self.keyboard.add_open_link(
+    label='КОММЕНТАРИИ 3|3',
+    link='https://vk.me/join/_5KViw6ASzRWe3CUaBKoumZZSmB5KXzjuao='
+)
+        self.keyboard.add_openlink_button('ПОДПИСКА 5|5', 'https://vk.me/join/_5KViw6ASzRWe3CUaBKoumZZSmB5KXzjuao=')
         self.keyboard.add_line()
-        self.keyboard.add_openlink_button('КОММЕНТАРИИ 3|3', 'https://vk.me/join/AZQ1dyv6QACC8C5Bv/yK7mou')
-        self.keyboard.add_openlink_button('ПОДПИСКА 5|5', 'https://vk.me/join/AJQ1d3LBaClcmgZHeyQB5x_m')
-        self.keyboard.add_line()
-        self.keyboard.add_openlink_button('ЛАЙКИ 20|20', 'https://vk.me/join/AZQ1dwaqQwwXhPUnUwQ6Y50Z')
+        self.keyboard.add_openlink_button('ЛАЙКИ 20|20', 'https://vk.me/join/_5KViw6ASzRWe3CUaBKoumZZSmB5KXzjuao=')
         self.keyboard.add_line()
         self.keyboard.add_button("✨УСЛУГА VIP✨", VkKeyboardColor.NEGATIVE)
         self.keyboard.add_line()
@@ -445,7 +447,7 @@ class like(BaseBot):
                 '🎯Ссылку можно менять\n\n'
                 '🎯Неделя - 350 рублей\n\n'
                 '🎯Месяц - 1100 рублей\n\n'
-                '🎯По всем вопросам обращайтесь к админу\n👇\n https://vk.com/dianamaysky', 
+                '🎯По всем вопросам обращайтесь к админу\n👇\n https://vk.com/yura_derdyuk', 
                 expire_ttl=24*60*60
             )
             return
@@ -458,7 +460,7 @@ class like(BaseBot):
                 '🎯Взамен никого проходить не надо\n\n'
                 '🎯Ссылку можно менять\n\n'
                 '🎯День - 400 рублей\n\n'
-                '🎯По всем вопросам обращайтесь к админу\n👇\n https://vk.com/dianamaysky',
+                '🎯По всем вопросам обращайтесь к админу\n👇\n https://vk.com/yura_derdyuk',
                 expire_ttl=24*60*60
             )
             return
@@ -558,7 +560,7 @@ class like(BaseBot):
                 f'{namesurname},\n{mes}\n\n{items_text}\n\n'
                 f'⌛ На выполнение: 6 мин после выполнения публикуйте ссылку ПОВТОРНО\n\n'
                 f'=======================\n\n'
-                f'🎯По услуге 𝓑𝓤𝞟, или хотите запустить бота Вконтакте или Телеграм пишите админу: https://vk.com/dianamaysky'
+                f'🎯По услуге 𝓑𝓤𝞟, или хотите запустить бота Вконтакте или Телеграм пишите админу: https://vk.com/yura_derdyuk'
             )
         elif mes == self.mess2:
             self.delete_message(n1, y)
@@ -622,10 +624,12 @@ class fol(BaseBot):
         self.keyboard = VkKeyboard(one_time=False)
         self.keyboard.add_button("❤️ПРАВИЛА ЧАТА❤️", VkKeyboardColor.PRIMARY)
         self.keyboard.add_line()
-        self.keyboard.add_openlink_button('ЛАЙКИ 10|10', 'https://vk.me/join/u2oEZSUs8sfLeMy79aqTDzta/IaGSc0Ihb0=')
-        self.keyboard.add_openlink_button('КОММЕНТАРИИ 3|3', 'https://vk.me/join/AZQ1dyv6QACC8C5Bv/yK7mou')
+        self.keyboard.add_openlink_button('ЛАЙКИ 10|10', 'https://vk.me/join/_5KViw6ASzRWe3CUaBKoumZZSmB5KXzjuao=')
+self.keyboard.add_open_link(
+    label='КОММЕНТАРИИ 3|3',
+    link='https://vk.me/join/_5KViw6ASzRWe3CUaBKoumZZSmB5KXzjuao='
         self.keyboard.add_line()
-        self.keyboard.add_openlink_button('ЛАЙКИ 20|20', 'https://vk.me/join/AZQ1dwaqQwwXhPUnUwQ6Y50Z')
+        self.keyboard.add_openlink_button('ЛАЙКИ 20|20', 'https://vk.me/join/_5KViw6ASzRWe3CUaBKoumZZSmB5KXzjuao=')
         self.keyboard.add_line() 
         self.keyboard.add_button("✨УСЛУГА VIP✨", VkKeyboardColor.NEGATIVE)
     
@@ -724,7 +728,7 @@ class fol(BaseBot):
                 '🎯Взамен никого проходить не надо\n\n'
                 '🎯Ссылку можно менять\n\n'
                 '🎯Неделя - 400 рублей\n\n'
-                '🎯По всем вопросам обращайтесь к админу\n👇\n https://vk.com/dianamaysky',
+                '🎯По всем вопросам обращайтесь к админу\n👇\n https://vk.com/yura_derdyuk',
                 expire_ttl=24*60*60
             )
             return
@@ -779,7 +783,7 @@ class fol(BaseBot):
                 f'{namesurname},\n{mes}\n\n{items_text}\n\n'
                 f'⌛ На выполнение: 6 мин после выполнения публикуйте ссылку ПОВТОРНО\n\n'
                 f'=======================\n\n'
-                f'🎯По услуге 𝓑𝓤𝞟, или хотите запустить бота Вконтакте или Телеграм пишите админу: https://vk.com/dianamaysky'
+                f'🎯По услуге 𝓑𝓤𝞟, или хотите запустить бота Вконтакте или Телеграм пишите админу: https://vk.com/yura_derdyuk'
             )
         elif mes == self.mess2:
             self.delete_message(n2, y)
@@ -834,10 +838,10 @@ class com(BaseBot):
         self.keyboard = VkKeyboard(one_time=False)
         self.keyboard.add_button("❤️ПРАВИЛА ЧАТА❤️", VkKeyboardColor.PRIMARY)
         self.keyboard.add_line()
-        self.keyboard.add_openlink_button('ЛАЙКИ 10|10', 'https://vk.me/join/u2oEZSUs8sfLeMy79aqTDzta/IaGSc0Ihb0=')
-        self.keyboard.add_openlink_button('ПОДПИСКА 5|5', 'https://vk.me/join/AJQ1d3LBaClcmgZHeyQB5x_m')
+        self.keyboard.add_openlink_button('ЛАЙКИ 10|10', 'https://vk.me/join/_5KViw6ASzRWe3CUaBKoumZZSmB5KXzjuao=')
+        self.keyboard.add_openlink_button('ПОДПИСКА 5|5', 'https://vk.me/join/_5KViw6ASzRWe3CUaBKoumZZSmB5KXzjuao=')
         self.keyboard.add_line()
-        self.keyboard.add_openlink_button('ЛАЙКИ 20|20', 'https://vk.me/join/AZQ1dwaqQwwXhPUnUwQ6Y50Z')
+        self.keyboard.add_openlink_button('ЛАЙКИ 20|20', 'https://vk.me/join/_5KViw6ASzRWe3CUaBKoumZZSmB5KXzjuao=')
         self.keyboard.add_line()
         self.keyboard.add_button("✨УСЛУГА VIP✨", VkKeyboardColor.NEGATIVE)
     
@@ -954,7 +958,7 @@ class com(BaseBot):
                 '🎯День - 250 рублей\n\n'
                 '🎯Неделя - 450 рублей\n\n'
                 '🎯Месяц - 1300 рублей\n\n'
-                '🎯По всем вопросам обращайтесь к админу\n👇\n https://vk.com/dianamaysky',
+                '🎯По всем вопросам обращайтесь к админу\n👇\n https://vk.com/yura_derdyuk',
                 expire_ttl=24*60*60
             )
             return
@@ -1053,7 +1057,7 @@ class com(BaseBot):
                 f'{namesurname},\n{mes}\n\n{items_text}\n\n'
                 f'⌛ На выполнение: 7 мин после выполнения публикуйте ссылку ПОВТОРНО\n\n'
                 f'=======================\n\n'
-                f'🎯По услуге 𝓑𝓤𝞟, или хотите запустить бота Вконтакте или Телеграм пишите админу: https://vk.com/dianamaysky'
+                f'🎯По услуге 𝓑𝓤𝞟, или хотите запустить бота Вконтакте или Телеграм пишите админу: https://vk.com/yura_derdyuk'
             )
         elif mes == self.mess2:
             self.delete_message(n3, y)
@@ -1102,7 +1106,7 @@ class com(BaseBot):
                 f'{namesurname},\n{self.mess2}\n\n{posts_text}\n\n'
                 f'⌛ На выполнение: 7 мин\n\n'
                 f'=======================\n\n'
-                f'🎯По услуге 𝓑𝓤𝞟, или хотите запустить в своём чате такого же БОТА пишите админу: https://vk.com/dianamaysky'
+                f'🎯По услуге 𝓑𝓤𝞟, или хотите запустить в своём чате такого же БОТА пишите админу: https://vk.com/yura_derdyuk'
             )
         
         self.set_user_state(q, UserState.CHECKING_COMPLETION)
@@ -1137,10 +1141,13 @@ class like15(BaseBot):
         self.keyboard = VkKeyboard(one_time=False)
         self.keyboard.add_button("❤️ПРАВИЛА ЧАТА❤️", VkKeyboardColor.PRIMARY)
         self.keyboard.add_line()
-        self.keyboard.add_openlink_button('КОММЕНТАРИИ 3|3', 'https://vk.me/join/AZQ1dyv6QACC8C5Bv/yK7mou')
-        self.keyboard.add_openlink_button('ПОДПИСКА 5|5', 'https://vk.me/join/AJQ1d3LBaClcmgZHeyQB5x_m')
+self.keyboard.add_open_link(
+    label='КОММЕНТАРИИ 3|3',
+    link='https://vk.me/join/_5KViw6ASzRWe3CUaBKoumZZSmB5KXzjuao='
+)
+        self.keyboard.add_openlink_button('ПОДПИСКА 5|5', 'https://vk.me/join/_5KViw6ASzRWe3CUaBKoumZZSmB5KXzjuao=')
         self.keyboard.add_line()
-        self.keyboard.add_openlink_button('ЛАЙКИ 10|10', 'https://vk.me/join/u2oEZSUs8sfLeMy79aqTDzta/IaGSc0Ihb0=')
+        self.keyboard.add_openlink_button('ЛАЙКИ 10|10', 'https://vk.me/join/_5KViw6ASzRWe3CUaBKoumZZSmB5KXzjuao=')
         self.keyboard.add_line()
         self.keyboard.add_button("✨УСЛУГА VIP✨", VkKeyboardColor.NEGATIVE)
         self.keyboard.add_line()
@@ -1239,7 +1246,7 @@ class like15(BaseBot):
                 '🎯Ссылку можно менять\n\n'
                 '🎯Неделя - 350 рублей\n\n'
                 '🎯Месяц - 1100 рублей\n\n'
-                '🎯По всем вопросам обращайтесь к админу\n👇\n https://vk.com/dianamaysky',
+                '🎯По всем вопросам обращайтесь к админу\n👇\n https://vk.com/yura_derdyuk',
                 expire_ttl=24*60*60
             )
             return
@@ -1252,7 +1259,7 @@ class like15(BaseBot):
                 '🎯Взамен никого проходить не надо\n\n'
                 '🎯Ссылку можно менять\n\n'
                 '🎯День - 400 рублей\n\n'
-                '🎯По всем вопросам обращайтесь к админу\n👇\n https://vk.com/dianamaysky',
+                '🎯По всем вопросам обращайтесь к админу\n👇\n https://vk.com/yura_derdyuk',
                 expire_ttl=24*60*60
             )
             return
@@ -1349,7 +1356,7 @@ class like15(BaseBot):
                 f'{namesurname},\n{mes}\n\n{items_text}\n\n'
                 f'⌛ На выполнение: 6 мин после выполнения публикуйте ссылку ПОВТОРНО\n\n'
                 f'=======================\n\n'
-                f'🎯По услуге 𝓑𝓤𝞟, или хотите запустить бота Вконтакте или Телеграм пишите админу: https://vk.com/dianamaysky'
+                f'🎯По услуге 𝓑𝓤𝞟, или хотите запустить бота Вконтакте или Телеграм пишите админу: https://vk.com/yura_derdyuk'
             )
         elif mes == self.mess2:
             self.delete_message(n4, y)
